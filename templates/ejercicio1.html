@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Ejercicio 1 — Promedio y Asistencia{% endblock %}
+{% block content %}
+  <h2 class="title">Ejercicio 1: Promedio y Asistencia</h2>
+
+  {% if error %}
+    <div class="alert error">{{ error }}</div>
+  {% endif %}
+  {% if resultado %}
+    <div class="alert ok">{{ resultado }}</div>
+  {% endif %}
+
+  <form method="post" class="form">
+    <label>Nota 1:
+      <input type="number" name="nota1" min="10" max="70" step="0.1" required value="{{ valores.nota1 }}">
+    </label>
+    <label>Nota 2:
+      <input type="number" name="nota2" min="10" max="70" step="0.1" required value="{{ valores.nota2 }}">
+    </label>
+    <label>Nota 3:
+      <input type="number" name="nota3" min="10" max="70" step="0.1" required value="{{ valores.nota3 }}">
+    </label>
+    <label>Asistencia (%):
+      <input type="number" name="asistencia" min="0" max="100" step="0.1" required value="{{ valores.asistencia }}">
+    </label>
+
+    <button type="submit" class="btn fill">Enviar</button>
+    <a href="{{ url_for('index') }}" class="btn link">Volver al Menú</a>
+  </form>
+{% endblock %}
+

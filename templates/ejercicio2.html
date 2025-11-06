@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Ejercicio 2 — Nombre más largo{% endblock %}
+{% block content %}
+  <h2 class="title">Ejercicio 2: Nombre más largo</h2>
+
+  {% if error %}
+    <div class="alert error">{{ error }}</div>
+  {% endif %}
+  {% if resultado %}
+    <div class="alert ok">{{ resultado }}</div>
+  {% endif %}
+
+  <form method="post" class="form">
+    <label>Nombre 1:
+      <input type="text" name="nombre1" required value="{{ valores.nombre1 }}">
+    </label>
+    <label>Nombre 2:
+      <input type="text" name="nombre2" required value="{{ valores.nombre2 }}">
+    </label>
+    <label>Nombre 3:
+      <input type="text" name="nombre3" required value="{{ valores.nombre3 }}">
+    </label>
+
+    <button type="submit" class="btn fill">Enviar</button>
+    <a href="{{ url_for('index') }}" class="btn link">Volver al Menú</a>
+  </form>
+{% endblock %}
