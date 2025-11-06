@@ -20,3 +20,6 @@ La aplicación está creada con el Framework **Flask** e incluye un menú princi
 
 ## Desarrollado por 
 **Zaira Manríquez**
+
+## Vista del proyecto
+![Menú principal del proyecto Flask](https://github.com/Zaira-m/Proyecto_Flask_Zaira/blob/main/static/menu_principal.png)
