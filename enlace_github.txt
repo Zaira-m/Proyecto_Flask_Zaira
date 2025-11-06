@@ -1,0 +1,11 @@
+Repositorio GitHub - Proyecto Flask
+Asignatura: Programación Web
+Encargo 3 - Fundamentos de Python con Flask
+
+Desarrollado por: Zaira Manríquez
+
+
+Enlace al repositorio: 
+https://github.com/Zaira-m/Proyecto_Flask_Zaira.git
+
+
